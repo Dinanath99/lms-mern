@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI;
+const MONGO_URI = process.env.MONGODB_URI;
 
 cors({
   origin: process.env.CLIENT_URL,
@@ -20,6 +20,8 @@ mongoose
   .connect(MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("Error connecting to MongoDB:", err));
+
+//routes configuration
 
 //global error handler
 app.use((err, req, res, next) => {
