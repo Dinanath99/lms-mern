@@ -32,12 +32,8 @@ A full-stack web application built with the MERN stack that allows admins to pos
 ## Installation & Setup
 
 ### Backend
-PORT=5000
+PORT=5000   | 
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-AWS_ACCESS_KEY_ID=your_aws_access_key_id   # if using AWS S3 for videos
-AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
-KHALTI_SECRET_KEY=your_stripe_secret_key   
 
 
 1. Clone the repo:
